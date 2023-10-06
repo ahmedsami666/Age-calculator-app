@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 94%);
+}
+.main {
+    background-color: white;
+    margin: 5% 20%;
+    border-radius: 1rem 1rem 8rem 1rem;
+    box-shadow: 0rem 0rem 3rem 0rem darkgray;
+    padding: 3rem 5rem;
+}
+.box1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.box1 div{
+    display: grid;
+}
+.heading{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 1%, 44%);
+}
+input {
+    width: 50%;
+    height: 3rem;
+    border-color: hsl(0, 1%, 44%);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.25rem;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+input::placeholder{
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+.box2 {
+    padding: 1rem 0;
+    display: grid;
+}
+.box2 hr{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 1px;
+    border-color: hsl(0, 1%, 44%);
+    position: relative;
+    top: 2.5rem;
+}
+.arrow {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    display: grid;
+    justify-items: center;
+    position: relative;
+    align-items: center;
+    left: 95%;
+}
+h1 {
+    display: inline-block;
+    margin: 0;
+}
+.box3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    display: grid;
+    align-items: center;
+    font-size: 2.5rem;
+}
+.box3 span{
+    color:hsl(259, 100%, 65%);
+    font-size: 200%;
+}
+/*active state*/
+.arrow:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.error-heading{
+    color: hsl(0, 100%, 67%);
+}
+.error-border{
+    border-color: hsl(0, 100%, 67%);
+}
+/*responsive*/
+@media (max-width:1080px) {
+    .main{
+        margin: 5%;
+    }
+}
+@media (max-width: 768px) {
+    .main {
+        padding: 1rem;
+    }
+    .arrow {
+        left: unset;
+        justify-self: center;
+    }
+    input{
+        width: 60%;
+    }
+    .box3 {
+        font-size: 2rem;
+    }
+}
+@media (max-width:425px) {
+    h1 {
+        font-size: 150%;
+    }
+    .box3 span {
+        font-size: 150%;
+    }
+}
+@media (max-width:375px) {
+    input {
+        width: 50%;
+        font-size: 1rem;
+    }
+    input::placeholder{
+        font-size: 1rem;
+    }
+    .box3 {
+        font-size: 1.5rem;
+    }
+}
